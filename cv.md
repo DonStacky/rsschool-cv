@@ -2,8 +2,6 @@
 
 # Sergey Rodnih
 
----
-
 ## Contacts:
 -	Discord: DonStacky
 -	E-mail: rodnihsergey1994@mail.ru
