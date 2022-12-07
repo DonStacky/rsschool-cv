@@ -1,1 +1,1 @@
-https://github.com/DonStacky/rsschool-cv/blob/gh-pages/cv.md
+https://DonStacky.github.io/rsschool-cv/
