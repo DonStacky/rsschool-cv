@@ -38,7 +38,7 @@
 
     .container.header {
         width: 100vw;
-    }
+        }
 
     .container {
         max-width: 1440px;
@@ -52,7 +52,7 @@
         }
 
     .nav {
-        background-color: rgb(50,50,50);
+        background-color: #a88a76;
         margin: 0;
        }
 
@@ -69,10 +69,10 @@
         text-decoration: none;
         font-family: "Source Sans Pro", sans-serif;
         font-weight: normal;
-        color: black;
+        color: #5C4B40;
         overflow:hidden;
         white-space: nowrap;
-        transition: 3s;
+        transition: 0.5s;
         }
 
     .nav-item {
@@ -80,20 +80,23 @@
         margin: 0 20px;
         width: 84px;
         border-radius: 10px;
-        background-color: darkcyan;
+        background-color: #DBB49A;
         text-align:center;
         transition: background-color 2s;
-        box-shadow: inset -2px -2px 1px black;
+        box-shadow: inset -2px -2px 1px #5C3B25;
         }
 
     .nav-item:hover {
-        background-color: darkblue;
+        background-color: #a88a76;
         }
 
     .nav-item:active {
-        background-color: darkblue;
-        box-shadow: inset 3px 3px 1px black;
+        box-shadow: inset 3px 3px 1px #5C3B25;
         }
+
+    .nav-link:hover {
+        color: #fff;
+    }
 
     .container.menu {
         display: flex;
@@ -102,6 +105,10 @@
 
     .section {
         width: 50%;
+    }
+
+    .section {
+        background-color: #dbb49a;
     }
 
     .profile {
@@ -123,12 +130,15 @@
         font-size: 40px;
         letter-spacing: 5px;
         text-transform: uppercase;
+        color: #5C4B40;
     }
+
     .profile__subtitle {
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: normal;
         letter-spacing: 3px;
         text-transform: uppercase;
+        color: #5C4B40;
     }
 
     .profile__name::after {
@@ -138,7 +148,7 @@
         left: 91px;
         width: 170px;
         height: 2px;
-        background-color: #829985;
+        background-color: #5C4B40;;
     }
 
     .section-title {
@@ -146,8 +156,14 @@
     }
 
     .text {
+        font-family: montserrat, sans-serif;
         margin: 10px 30px;
         line-height: 150%;
+    }
+
+    .li-text {
+        font-family: montserrat, sans-serif;
+        line-height: 10%;
     }
 
     .code {
@@ -155,16 +171,32 @@
     }
 
     .link {
+        font-family: montserrat, sans-serif;
         margin: 0px 0px;
+        text-decoration: none;
+        color: #5C4B40;
+    }
+
+    .link:hover {
+        color: #fff;
+    }
+
+    .link:active {
+        color: #E1905A;
+    }
+
+    .link:visited {
+        color: #E1905A;
     }
 
     .footer {
-        background-color: darkgrey;
+        background-color: #a88a76;
         padding: 20px;
     }
 
     .text_footer {
-        display: inline-block;
+        display: inline;
+        font-family: montserrat, sans-serif;
     }
 
     .container_footer {
@@ -176,6 +208,12 @@
         .author {
             align-self: center;
         }
+
+    .section-title {
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: normal;
+        color: #5C4B40;
+    }
 
     @media (max-width: 768px) {
         .section {
