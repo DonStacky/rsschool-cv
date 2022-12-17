@@ -1,4 +1,4 @@
-<img src="IMG_0087.JPG" alt="Photo Serega" width="150">
+<img src="assets/img/IMG_00877-round.JPG" alt="Photo Serega" width="150">
 
 # Sergey Rodnih
 
