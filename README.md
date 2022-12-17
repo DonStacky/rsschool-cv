@@ -1,1 +1,1 @@
-# rsschool-cv
+https://DonStacky.github.io/rsschool-cv/
