@@ -32,7 +32,6 @@
     }
 
     .main {
-        min-height: 50vh;
         flex-grow: 1;
     }
 
@@ -42,7 +41,6 @@
 
     .container {
         max-width: 1440px;
-        width: 80vw;
         margin: 0 auto;
     }
 
@@ -65,7 +63,6 @@
         }
 
     .nav-link {
-        line-height: 50px;
         text-decoration: none;
         font-family: "Source Sans Pro", sans-serif;
         font-weight: normal;
@@ -75,8 +72,13 @@
         transition: 0.5s;
         }
 
+    .nav-text {
+        line-height: 50px;
+        margin: 0;
+    }
+
     .nav-item {
-        border: 1px solid black;
+        border: 1px solid #5C3B25;
         margin: 0 20px;
         width: 84px;
         border-radius: 10px;
@@ -101,13 +103,11 @@
     .container.menu {
         display: flex;
         flex-wrap: wrap;
-    }
+        width: 80%;
+        }
 
     .section {
         width: 50%;
-    }
-
-    .section {
         background-color: #dbb49a;
     }
 
@@ -157,14 +157,15 @@
 
     .text {
         font-family: montserrat, sans-serif;
-        margin: 10px 30px;
+        margin: 0px 30px;
         line-height: 150%;
     }
 
     .li-text {
         font-family: montserrat, sans-serif;
-        line-height: 10%;
-    }
+        margin: 0px;
+        display: inline;
+        }
 
     .code {
         margin-left: 30px;
@@ -185,28 +186,34 @@
         color: #E1905A;
     }
 
-    .link:visited {
-        color: #E1905A;
-    }
-
     .footer {
         background-color: #a88a76;
-        padding: 20px;
-    }
+        width: 100%;
+        max-width: 1440px;
+        }
 
     .text_footer {
         display: inline;
         font-family: montserrat, sans-serif;
-    }
-
-    .container_footer {
-        display: flex;
-        min-width: 100vw;
-        justify-content: space-around;
+        margin-left: 20px;
         }
 
-        .author {
-            align-self: center;
+    .container.footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+        }
+
+    .author {
+        display: flex;
+        align-items: center;
+        }
+
+    .link.footer {
+        display: flex;
+        align-items: center;
+        padding: 0;
         }
 
     .section-title {
@@ -215,8 +222,103 @@
         color: #5C4B40;
     }
 
+    .section:nth-child(7) {
+        flex-grow: 1;
+        align-self: flex-end;
+    }
+
+    .edu_item,
+    .skills_item,
+    .contact_item {
+        position: relative;
+        padding-left: 30px;
+        list-style: none;
+        line-height: 150%;
+    }
+
+    .edu_item::before,
+    .skills_item::before,
+    .contact_item::before {
+        content: "";
+        position: absolute;
+        top: 6px;
+        left: 0px;
+        width: 10px;
+        height: 10px;
+        border: 1px solid #5C4B40;
+        border-radius: 50%;
+    }
+
+    .edu_list,
+    .skills_list,
+    .contact_list {
+        padding-left: 30px;
+    }
+
     @media (max-width: 768px) {
         .section {
             width: 100%;
         }
+    }
+
+    @media (max-width: 850px) {
+        .nav {
+            display: none;
+        }
+    }
+
+    @media (max-width: 620px) {
+        .profile__name {
+            font-size: 30px;
+            letter-spacing: 0px;
+        }
+        
+        .profile__subtitle {
+            font-size: 20px;
+            letter-spacing: 0px;
+        }
+
+        .profile__name::after {
+            top: 46px;
+            left: 25px;
+            width: 170px;
+            height: 1.5px;
+            }
+    }
+
+    @media (max-width: 500px) {
+        .container.footer,
+        .profile {
+            flex-direction: column;
+        }
+
+        .container.menu {
+            width: 90%;
+        }
+    }
+
+    @media (max-width: 350px) {
+        .container.menu {
+            width: 100%;
+        }
+
+        .text,
+        .section-title,
+        .code {
+            margin-left: 15px;
+        }
+
+        .edu_list,
+        .skills_list,
+        .contact_list {
+            padding-left: 15px;
+        }
+
+        .profile__subtitle {
+            font-size: 15px;
+        }
+
+        .profile__name {
+            left: 0px;
+            }
     }

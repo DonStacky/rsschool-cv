@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>cv</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="assets/img/html.ico">
@@ -11,17 +12,17 @@
       <div class="container header">
           <nav class="nav">
             <ul class="nav-list">
-              <li class="nav-item"><a href="#summary" class="nav-link">About Me</a></li>
-              <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-              <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
-              <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
-              <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-              <li class="nav-item"><a href="#language" class="nav-link">Language</a></li>
-              <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+              <li class="nav-item"><a href="#summary" class="nav-link"><p class="nav-text">About Me</p></a></li>
+              <li class="nav-item"><a href="#skills" class="nav-link"><p class="nav-text">Skills</p></a></li>
+              <li class="nav-item"><a href="#code" class="nav-link"><p class="nav-text">Code</p></a></li>
+              <li class="nav-item"><a href="#experience" class="nav-link"><p class="nav-text">Experience</p></a></li>
+              <li class="nav-item"><a href="#education" class="nav-link"><p class="nav-text">Education</p></a></li>
+              <li class="nav-item"><a href="#language" class="nav-link"><p class="nav-text">Language</></a></li>
+              <li class="nav-item"><a href="#contacts" class="nav-link"><p class="nav-text">Contacts</p></a></li>
             </ul>
           </nav>
         <div class="profile">
-          <img src="assets/img/IMG_00877-round.png" alt="фото Сергей Родных" class="avatar">
+          <img src="assets/img/IMG_00877-round.png" alt="Sergey Rodnih photo" class="avatar">
           <div class="profile__title">
             <h1 class="profile__name">Sergey Rodnih</h1>
             <h2 class="profile__subtitle">Future Front-end developer</h2>
@@ -63,7 +64,7 @@
       </section>
       <section class="section" id="code">
         <h2 class="section-title">Code Example</h2>
-        <code class="code">console.log(‘Hello World!’);</code>
+        <code class="code">console.log(&#8216;Hello World!&#8217;);</code>
       </section>
       <section class="section" id="language">
         <h2 class="section-title">Language</h2>
@@ -73,29 +74,31 @@
         <h2 class="section-title">Contacts</h2>
         <ul class="contact_list">
           <li class="contact_item">
-            <p class="text_footer">Discord:</p>
+            <p class="li-text">Discord:</p>
             <a href="https://discordapp.com/users/890455321632440361" class="link contact">DonStacky</a>
           </li>
           <li class="contact_item">
-            <p class="text_footer">E-mail:</p>
+            <p class="li-text">E-mail:</p>
             <a href="mailto:rodnihsergey1994@mail.ru" class="link contact">rodnihsergey1994@mail.ru</a>
           </li>
           <li class="contact_item">
-            <p class="text_footer">Telegram:</p>
+            <p class="li-text">Telegram:</p>
             <a href="https://t.me/rodnihsergey" class="link contact">@rodnihsergey</a>
           </li>
         </ul>
-      </section><section class="section">
-        </section>
+      </section>
     </div>
   </main>
   <footer class="footer">
-    <div class="container_footer">
+    <div class="container footer">
       <div class="author">
-        <p class="text_footer">&copy; 2022</p>
-        <a href="https://github.com/DonStacky" class="link footer">DonStacky</a>
+        <a href="https://github.com/DonStacky" class="link footer">
+          <img src="assets/img/github.svg" alt="GitHub logo" class="github" width="50">
+          <p class="text_footer">DonStacky</p>
+        </a>
+        <p class="text_footer">&copy;&nbsp;2022</p>
       </div>
-      <a href="https://rs.school/js/" class="link rss"><img src="assets/img/rs_school_js.svg" alt="Логотип RSS" width="200"></a>
+      <a href="https://rs.school/js/" class="link rss"><img src="assets/img/rs_school_js.svg" alt="RSSchool logo" width="200"></a>
     </div>
   </footer>
 </body>
